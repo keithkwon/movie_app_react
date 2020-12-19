@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Movie.css";
 
-function Movie({ id, year, title, summary, poster, genres }) {
+function Movie({ id, year, title, summary, poster, genres, torrents }) {
   return (
-    <div className="movie">
+    <div className="movie col-12 col-lg-6">
       <img src={poster} alt={title} title={title} />
       <div className="movie__data">
         <h3 className="movie__title">{title}</h3>
@@ -17,6 +17,21 @@ function Movie({ id, year, title, summary, poster, genres }) {
             </li>
           ))}
         </ul>
+        <div>
+          {torrents.map((torrent, index) => (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = `${torrent.url}`;
+              }}
+              key={index}
+              className="torrents__torrent__btn btn btn-primary"
+            >
+              {torrent.quality} Download
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

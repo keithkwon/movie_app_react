@@ -1,3 +1,5 @@
+
+
 # Movie service with React
 
 > React : Made from facebook. Used in spotify airbnb. Angular has angular specific grammar, but react has huge user population. Besides JSX, react is mostly javascript. 
@@ -418,4 +420,67 @@ Integrating multiple js, css, html into one file. Bundler.
 webpack is an open-source JavaScript module bundler. 
 
 vue-cli does the babel and webpack job at the back-end.
+
+
+
+### importing components
+
+```js
+//Movie.js
+
+import React from "react";
+import PropTypes from "prop-types";
+
+function Movie({ id, year, title, summary, poster }) {
+  return <h1>{title}</h1>;
+}
+
+Movie.propTypes = {
+  id: PropTypes.number.isRequired,
+  year: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  poster: PropTypes.string.isRequired,
+};
+
+export default Movie;
+
+```
+
+
+
+```js
+//App.js
+
+import Movie from "./Movie";
+.
+.
+.
+ render() {
+    const { isLoading, movies } = this.state;
+    return (
+      <div>
+        {" "}
+        {isLoading
+          ? "Loading"
+          : movies.map((movie) => {
+              return (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  year={movie.year}
+                  title={movie.title}
+                  summary={movie.summary}
+                  poster={movie.medium_cover_image}
+                />
+              );
+            })}{" "}
+      </div>
+    );
+  }
+}
+.
+.
+.
+```
 
