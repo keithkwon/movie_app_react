@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  background-image: url("theater2.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.loader__text {
+  color: yellow;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.logo {
+  border-radius: 25px;
+}
+
+.header {
+  color: white;
+  margin: 70px;
+}
+
+.form-group {
+  margin-bottom: 140px;
+}
+
+.form-control {
+  border-radius: 20px;
+  min-width: 400px;
+}

@@ -1,0 +1,26 @@
+.card {
+  max-width: 18rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin: 4px;
+  border-radius: 30px;
+}
+
+.card-img-top {
+  border-radius: 30px;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: yellow;
+}
+.movie__title:hover {
+  color: yellow;
+}
+.movie__year:hover {
+  color: yellow;
+}

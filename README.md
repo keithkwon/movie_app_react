@@ -208,6 +208,88 @@ One language to use on diverse environments.
 
 
 
+### Deploy
+
+
+
+```js
+// package.json
+
+.
+.
+.
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  // Add homepage part
+  "homepage": "https://keithkwon.dev/movie_app_react/"
+}
+
+```
+
+
+
+
+
+
+
+
+
+`npm i gh-pages`
+
+```js
+//package.json
+
+.
+.
+.
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy":"npm run build"
+  },
+     
+
+```
+
+``npm run build`
+
+
+
+
+
+
+
+## Router
+
+`npm i react-router-dom`
+
+![image-20201220170524683](README.assets/image-20201220170524683.png)
+
+
+
+![image-20201220170624933](README.assets/image-20201220170624933.png)
+
+
+
+every route in router get some props by default.
+
+
+
+### Hash router vs Browser router
+
+
+
+
+
+
+
 ### Dynamic Data
 
 Changes. Props are no good. 
@@ -402,6 +484,20 @@ axios is the chocolate fetch is the nuts
     this.getMovies;
   }
 ```
+
+
+
+
+
+### socket
+
+
+
+## websocket vs socket io
+
+
+
+
 
 
 
