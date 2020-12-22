@@ -55,7 +55,6 @@ class Home extends React.Component {
 
   componentDidMount() {
     this.getMovies();
-    console.log("here");
   }
   render() {
     //    return <div> {this.state.isLoading ? "Loading" : "Ready" </div>
@@ -81,7 +80,7 @@ class Home extends React.Component {
         </form>
 
         {isLoading ? (
-          <div className="loader">
+          <div className="container loader">
             <span className="loader__text">Just a second please :)</span>
           </div>
         ) : (
