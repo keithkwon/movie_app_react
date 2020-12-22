@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/movie_app_react/static/css/main.c51b0ca1.chunk.css",
+    "main.css": "/movie_app_react/static/css/main.572f8c6a.chunk.css",
     "main.js": "/movie_app_react/static/js/main.cdc36184.chunk.js",
     "main.js.map": "/movie_app_react/static/js/main.cdc36184.chunk.js.map",
     "runtime-main.js": "/movie_app_react/static/js/runtime-main.c1172d73.js",
@@ -8,7 +8,7 @@
     "static/js/2.8ae0ced0.chunk.js": "/movie_app_react/static/js/2.8ae0ced0.chunk.js",
     "static/js/2.8ae0ced0.chunk.js.map": "/movie_app_react/static/js/2.8ae0ced0.chunk.js.map",
     "index.html": "/movie_app_react/index.html",
-    "static/css/main.c51b0ca1.chunk.css.map": "/movie_app_react/static/css/main.c51b0ca1.chunk.css.map",
+    "static/css/main.572f8c6a.chunk.css.map": "/movie_app_react/static/css/main.572f8c6a.chunk.css.map",
     "static/js/2.8ae0ced0.chunk.js.LICENSE.txt": "/movie_app_react/static/js/2.8ae0ced0.chunk.js.LICENSE.txt",
     "static/media/App.css": "/movie_app_react/static/media/normal_normal_normal.d3d97981.woff2",
     "static/media/Home.css": "/movie_app_react/static/media/theater2.a47bdef9.jfif"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.c1172d73.js",
     "static/js/2.8ae0ced0.chunk.js",
-    "static/css/main.c51b0ca1.chunk.css",
+    "static/css/main.572f8c6a.chunk.css",
     "static/js/main.cdc36184.chunk.js"
   ]
 }
